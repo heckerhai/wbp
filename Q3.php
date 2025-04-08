@@ -1,3 +1,19 @@
+<?php
+// Initialized value
+$num = -15;
+
+// Check if positive, negative or zero
+if ($num > 0) {
+    echo "The number is Positive";
+} elseif ($num < 0) {
+    echo "The number is Negative";
+} else {
+    echo "The number is Zero";
+}
+?>
+
+
+//⚠️Incase user input is required
 <!DOCTYPE html>
 <html>
 <head>
