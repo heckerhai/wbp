@@ -1,3 +1,10 @@
+//SQL
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100)
+);
+
 <?php
 $conn = new mysqli("localhost", "root", "", "test");
 if ($conn->connect_error) die("Connection failed");
