@@ -15,7 +15,7 @@ if (isset($_POST['check'])) {
   $num = $_POST['num'];
 
   if ($num > 0) {
-    echo "The number is Positive";
+    echo "The number is Positive ";
   } elseif ($num < 0) {
     echo "The number is Negative";
   } else {
