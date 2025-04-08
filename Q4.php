@@ -52,7 +52,7 @@ if (isset($_POST['show'])) {
       echo "December";
       break;
     default:
-      echo "Invalid month number. Please enter a number between 1 and 12.";
+      echo "Invalid month number.";
   }
 }
 ?>
