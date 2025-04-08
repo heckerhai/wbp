@@ -12,6 +12,7 @@
   <input type="submit" name="submit" value="Find Highest">
 </form>
 
+  
 <?php
 if (isset($_POST['submit'])) {
   $a = $_POST['num1'];
