@@ -1,17 +1,26 @@
+//SQL
+CREATE TABLE employee (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  mobile VARCHAR(15),
+  salary INT
+);
+
 <?php
 $conn = new mysqli("localhost", "root", "", "test");
 if ($conn->connect_error) die("Connection failed");
 
 // Predefined data
-$name = "John Doe";
-$email = "john@example.com";
+$name = "Amit Kumar";
+$mobile = "9876543210";
+$salary = 30000;
 
 // Insert data
-$sql = "INSERT INTO users (name, email) VALUES ('$name', '$email')";
+$sql = "INSERT INTO employee (name, mobile, salary) VALUES ('$name', '$mobile', $salary)";
 if ($conn->query($sql)) {
-    echo "Data inserted successfully.<br>";
+    echo "Employee data inserted successfully.";
 } else {
-    echo "Insert error: " . $conn->error . "<br>";
+    echo "Insert error: " . $conn->error;
 }
 
 $conn->close();
